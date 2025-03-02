@@ -5,6 +5,7 @@ import authService from './appwrite/auth.js';
 import { login, logout} from './store/authSlice.js';
 import { Header, Footer} from "./components/index.js";
 import { Outlet } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         </main>
         <Footer />
       </div>
+      <Analytics />
     </div>
   ) : null
 }
